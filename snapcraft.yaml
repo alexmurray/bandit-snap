@@ -1,6 +1,6 @@
 name: bandit
 base: core18
-version: 1.7.0
+version: 1.7.2
 summary: A Python security linter from PyCQA
 description: |
   Bandit is a tool designed to find common security issues in Python
