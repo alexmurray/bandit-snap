@@ -13,7 +13,7 @@ confinement: strict
 
 apps:
   bandit:
-    command: bandit
+    command: bin/bandit
     environment:
       PYTHONIOENCODING: utf-8
     plugs:
