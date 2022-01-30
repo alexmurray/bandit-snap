@@ -1,5 +1,4 @@
 name: bandit
-base: core18
 version: 1.7.2
 summary: A Python security linter from PyCQA
 description: |
@@ -8,6 +7,7 @@ description: |
   runs appropriate plugins against the AST nodes. Once Bandit has finished
   scanning all the files it generates a report.
 
+base: core20
 grade: stable
 confinement: strict
 
