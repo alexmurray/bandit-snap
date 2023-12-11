@@ -24,3 +24,20 @@ parts:
     plugin: python
     source: https://github.com/PyCQA/bandit.git
     source-tag: $SNAPCRAFT_PROJECT_VERSION
+    stage:
+      # keep duplicates from bandit-sarif-exporter part below
+      - -pyvenv.cfg
+      - -bin/activate*
+      - -lib/python3.8/site-packages/_distutils_hack/*
+      - -lib/python3.8/site-packages/pip*/*
+      - -lib/python3.8/site-packages/pkg_resources*/*
+      - -lib/python3.8/site-packages/pbr*/*
+      - -lib/python3.8/site-packages/setuptools*/*
+      - -lib/python3.8/site-packages/wheel*/*
+
+  bandit-sarif-formatter:
+    after: [ bandit ]
+    plugin: python
+    source: https://github.com/microsoft/bandit-sarif-formatter.git
+    source-tag: 1.1.1
+
