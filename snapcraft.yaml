@@ -1,5 +1,5 @@
 name: bandit
-version: 1.7.9
+version: 1.7.10
 summary: A Python security linter from PyCQA
 description: |
   Bandit is a tool designed to find common security issues in Python
