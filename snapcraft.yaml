@@ -23,7 +23,7 @@ parts:
   bandit:
     plugin: python
     source: https://github.com/PyCQA/bandit.git
-    source-tag: $SNAPCRAFT_PROJECT_VERSION
+    source-tag: $CRAFT_PROJECT_VERSION
     stage:
       # avoid snapcraft trying to stage two copies of these same pieces by
       # removing them from the bandit part and keeping them from
