@@ -36,6 +36,8 @@ parts:
       - -lib/python3.12/site-packages/pkg_resources*/*
       - -lib/python3.12/site-packages/setuptools*/*
       - -lib/python3.12/site-packages/wheel*/*
+      - -lib/python3.12/site-packages/packaging/__pycache__/*
+      - -lib/python3.12/site-packages/packaging/licenses/__pycache__/*
 
   bandit-sarif-formatter:
     after: [ bandit ]
